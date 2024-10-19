@@ -30,11 +30,13 @@ class MyApp extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.search),
+              iconSize: 28,
               color: Colors.white,
             ),
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.menu),
+              iconSize: 28,
               color: Colors.white,
             ),
           ],
