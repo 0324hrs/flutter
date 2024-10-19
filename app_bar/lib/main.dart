@@ -22,20 +22,20 @@ class MyApp extends StatelessWidget {
             icon: Icon(Icons.menu),
             color: Colors.white,
           ), */
-          title: Text(
+          title: const Text(
             "Facebook",
             style: TextStyle(color: Colors.white),
           ),
           actions: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.search),
+              icon: const Icon(Icons.search),
               iconSize: 28,
               color: Colors.white,
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.menu),
+              icon: const Icon(Icons.menu),
               iconSize: 28,
               color: Colors.white,
             ),
