@@ -12,36 +12,55 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          elevation: 0,
-
-          /*  leading: IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.menu),
-            color: Colors.white,
-          ), */
-          title: const Text(
-            "Facebook",
-            style: TextStyle(color: Colors.white),
+      home: DefaultTabController(
+        length: 3,
+        child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.black87,
+            elevation: 0,
+        
+            /*  leading: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.menu),
+              color: Colors.white,
+            ), */
+            title: Text(
+              "Facebook",
+              style: TextStyle(color: Colors.white),
+            ),
+            actions: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.search),
+                iconSize: 28,
+                color: Colors.white,
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.menu),
+                iconSize: 28,
+                color: Colors.white,
+              ),
+            ],
+            bottom: TabBar(
+              tabs: [
+                Tab(
+                  text: "Hey",
+                  icon: Icon(Icons.menu),
+                ),
+                 Tab(
+                  text: "Hey",
+                  icon: Icon(Icons.settings),
+                ),
+                 Tab(
+                  text: "Hey",
+                  icon: Icon(Icons.branding_watermark),
+                ),
+              ],
+            ),
+        
+            //leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
           ),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.search),
-              iconSize: 28,
-              color: Colors.white,
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.menu),
-              iconSize: 28,
-              color: Colors.white,
-            ),
-          ],
-
-          //leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
         ),
       ),
       //title: 'Flutter Demo',
